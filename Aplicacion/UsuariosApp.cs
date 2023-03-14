@@ -16,7 +16,7 @@ namespace web_net_core.Aplicacion
         {
             _conecction = connection;
         }
-
+        //Hacemos un select a la base de datos
         public List<UsuariosEN> GetAll()
         {
             return _conecction.Query<UsuariosEN>("SELECT * FROM Usuarios").ToList();
